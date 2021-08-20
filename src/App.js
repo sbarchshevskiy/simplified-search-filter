@@ -1,10 +1,14 @@
 import SearchBar from "./components/SearchBar";
-
-
-function App() {
+import locationData from './data.json'
+import './App.css'
+export default function App() {
   return (
-    <SearchBar/>
+    <div className="App">
+      <SearchBar
+        placeholder="Enter the location..."
+        data={locationData}
+      />
+    </div>
   );
 }
 
-export default App;
